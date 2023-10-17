@@ -28,4 +28,6 @@
   - **김윤섭**: 프로젝트 구상
   - **염진희**: 프로젝트 구상
    
-- **[프로젝트 프리뷰](./preview.md)**
+- ## :link: ERD
+* 배달 공구 웹페이지 ERD ![erd](https://github.com/dmlgus0458/JAVATermProject/assets/105932694/b92daf8a-4f6d-423c-8520-136f31899987)
+
