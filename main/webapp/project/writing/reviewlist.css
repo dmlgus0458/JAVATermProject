@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+}
+#logo{
+    margin: 0 auto;
+    width: 280px;
+}
+#logo img{
+    width: 250px;
+    margin: 70px 20px 50px 20px;
+}
+table{
+    margin: 15px auto;
+    border-collapse: collapse;
+}
+table .head{
+    border: 1px ;
+    font-size: 17px;
+    background-color: #78c3b8;
+}
+table .head th{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    border: 1px solid #dbd9d9;
+    
+}
+table tr td{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    border: 1px solid #aca7a7;
+}
+.table_title a{
+    text-decoration: none; 
+    color: rgb(57, 56, 56);
+}
+.table_title a:hover{
+    cursor: pointer;
+    color: #63b1a5;
+    font-weight: bold;
+    text-decoration: underline;
+}

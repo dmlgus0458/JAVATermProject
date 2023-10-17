@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="euc-kr" />
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link rel="stylesheet" href="/writing/write.css">
+</head>
+
+<body>
+    <nav id="navigation_bar">
+        <div>
+          <button><a href="../writing/test.html">글 쓰기</a></button>
+          <button>글 목록 보러가기</button>
+          <button>내 글 보러가기</button>
+        </div>
+      </nav>
+    <div id="logo"><a href="../main/main.jsp"><img src="./img/logo.png" alt=""></a></div>
+    <div class="writecontainer">
+        <div class="writecontainer_div">
+            <h2>게시글 작성</h2><br>
+            <hr><br>
+            <form action="writeAction.jsp" method="post">
+                <div class="title"><input type="text" name="Title" placeholder="    게시글 제목을 작성하세요." /></div>
+                <div class="usercount"><input type="number" name="recruit" min="2" max="4" placeholder="    모집인원을 선택하세요."></div>
+                <div class="cost"><input type="number" name="price" min="1000" max="999999" placeholder="    배달비를 선택하세요."></div><br />
+                
+                <div class="place"><input type="text" name="place" placeholder="    모집장소를 입력하세요."></div><br>
+               
+                <div class="category">
+                    <div style="margin: 0px; width: 600px;">카테고리를 입력하세요</div>
+                    <table>
+                        <tr>
+                            <td><input type='radio' name='category' value='chicken' />치킨</td>
+                            <td><input type='radio' name='category' value='hamburger' />햄버거</td>
+                            <td><input type='radio' name='category' value='sushi' />스시</td>
+                            <td><input type='radio' name='category' value='pizza' />피자</td>
+                        </tr>
+                        <tr>
+                            <td><input type='radio' name='category' value='chicken' />치킨</td>
+                            <td><input type='radio' name='category' value='hamburger' />햄버거</td>
+                            <td><input type='radio' name='category' value='sushi' />스시</td>
+                            <td><input type='radio' name='category' value='pizza' />피자</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <div class="detail">상세내용을 입력하세요.<br />
+                    <textarea name="Content" rows="5" cols="50"></textarea>
+                </div>
+                <br />
+                <input type="hidden" name="nick" value="<%=nick%>"><br>
+                <input type="submit" class="submit"/>&nbsp;
+                <input type="reset" class="submit" />
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>

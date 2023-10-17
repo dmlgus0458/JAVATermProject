@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}#logo{
+    margin: 0 auto;
+    width: 280px;
+}
+#logo img{
+    width: 250px;
+    margin: 70px 20px 50px 20px;
+}
+
+.writecontainer {
+    width: 690px;
+    height: 750px;
+    border: 2px solid #cfcece;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+}
+.writecontainer h2{
+    margin: 20px 0 0 0;
+}
+
+.writecontainer form div{
+    margin: 10px 0 0 0;
+}
+.writecontainer form .title input, .usercount input, .cost input , .place input{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.writecontainer .usercount{
+    width: 40%;
+    float: left;font-weight: 700;
+}
+.writecontainer .cost{
+	width: 45%;
+    float: right;font-weight: 700;
+}
+.place{
+    font-weight: 700;
+    font-size: 17px;
+}
+.place select{
+    width: 100%;
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.category {
+    margin-top: 0;
+}
+.category div {
+    width: 100%;
+    font-size: 17px;
+    font-weight: 700;
+}
+.category table{
+    width: 600px;
+    margin-top: 15px;
+}
+.category table tr td{
+    padding: 15px;
+}
+.category table input{
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+.detail{
+    font-weight: 700;
+    font-size: 17px;
+}
+.detail textarea{
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 20px;
+}
+.submit{
+    width: 180px;
+    height: 50px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #549B90;
+    color: white;
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #366962;
+}

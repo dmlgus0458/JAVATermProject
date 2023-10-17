@@ -1,0 +1,79 @@
+*{
+    margin: 0 auto;
+}
+header{
+    margin: 0 auto;
+    width: 280px;
+}
+header img{
+    width: 250px;
+    margin: 70px 0 0 0;
+}
+.side-bar{
+    width: 200px;
+    height: 335px;
+    padding: 30px 10px 30px 30px;
+    background-color: rgb(192, 190, 190);
+    position: relative;
+    float: left;
+}
+.side-bar a{
+    text-decoration: none;
+}
+.side-bar div{
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 900;
+}
+.main{
+    margin: 50px auto;
+    width: 500px;
+}
+.main .table{
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.main img{
+    width: 55px;
+    text-align: center; 
+    margin: 0 10px;
+}
+.main-title{
+    margin: 0 10px;
+}
+.main-title div{
+    margin: 5px 0;
+}
+.main-title .name{
+    font-size: 25px;
+    font-weight: 800;
+}
+.main .relibility{
+    margin: 50px 20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.relibility-main table{
+    margin: 30px 50px;
+}
+.relibility-main table td img{
+    width: 60px;
+}
+.relibility_check{
+    font-size: 18px;
+}
+.relibility
+.relibility-main table tr td .relibility_check .temperature{
+    font-size: 25px;
+    font-weight: 900;
+}
+.relibility-main table td .relibility_check {
+    margin-left: 20px;
+}
+.relibility-main table tr td .relibility_check .relibility_intro{ 
+    font-weight: 600;
+}
+.temperature{
+    color: #63b1a5;
+    font-weight: 800;
+}

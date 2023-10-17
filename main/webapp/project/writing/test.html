@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="./test.css">
+</head>
+<body>
+    <nav id="navigation_bar">
+        <div>
+          <button><a href="../writing/test.html">글 쓰기</a></button>
+          <button>글 목록 보러가기</button>
+          <button>내 글 보러가기</button>
+        </div>
+      </nav>
+    <div id="logo"><a href="../main/main.jsp"><img src="./img/logo.png" alt=""></a></div>
+    <table width=600px height=800px class="table table-striped" style=" border:1px solid #dddddd;margin-left:auto;margin-right:auto;text-align:center; ">
+        <thead>
+            <tr>
+                <th colspan="2" style="background-color: #eeeeee; ">게시판 글쓰기</th>
+            </tr>
+        </thead>
+        <tr>
+            <th colspan="2">제목 :  <input type="text" placeholder="제목" style="width:650px; height:40px;"></th>
+        </tr>
+        <tr>
+            <td colspan="2"><hr style="width : 800px;" /></td>
+        </tr>
+
+
+        <tr>
+            <td>음식가격 :  <input type="text" placeholder="숫자만 입력하세요" style="width:250px;height:40px;"></td>
+            <td>배달가격 :  <input type="text" placeholder="숫자만 입력하세요" style="width:250px;height:40px;"></td>
+        </tr>
+        <tr>
+            <td>모집인원 :  <input type="text" placeholder="숫자만 입력하세요" style="width:250px;height:40px;"></td>
+            <td>
+                모집장소 :  <select style="height: 40px; width:250px;">
+                    <option value="1" selected>본부동</option>
+                    <option value="2">조형관</option>
+                    <option value="3">기숙사</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>시작시간 :  <input type="time" value="12:00" style="height:40px;width:250px;"></td>
+            <td>종료시간 :  <input type="time" value="13:00" style="height:40px;width:250px;"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                카테고리 :
+
+                <input type="radio" name="category" value="Fastfood" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;" checked>패스트푸드
+
+                <input type="radio" name="category" value="Chicken" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;">치킨
+
+                <input type="radio" name="category" value="Pizza" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;">피자
+
+                <input type="radio" name="category" value="Jajangmyeon" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;">중국집
+
+                <input type="radio" name="category" value="Snackbar" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;">분식
+
+                <input type="radio" name="category" value="Koreanfood" style="margin-top:20px; margin-bottom:20px; margin-right:10px;margin-left:30px;">한식
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><hr style="width : 800px;" /></td>
+        </tr>
+        <tr>
+            <td colspan="2">내용 :  <input type="textarea" placeholder="내용" maxlength="1024" style="width:700px;height: 200px"></td>
+        </tr>
+
+
+
+    </table>
+    <input type="submit" value="저장하기" style="margin-top:50px; margin-left:1200px;" />
+    <input type="reset" value="취소하기" />
+
+</body>
+</html>

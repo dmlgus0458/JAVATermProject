@@ -1,0 +1,85 @@
+main .sign{
+    border: 2px solid #549B90;
+}
+.sign{
+    width: 500px;
+    height: 700px;
+    position: relative;
+    margin: 5% auto;
+    text-align: center;
+    border-radius: 40px;
+}
+.sign h1 img{
+    width: 300px;
+    padding-top: 30px;
+}
+.sign h1{
+    padding-top: 30px;
+    color: #549B90;
+}
+#user-id, #user-nick, #user-email, #user-pw, #user-pw-check{
+    width: 350px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 17px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #f0eeee;
+}
+/* .sign form div input{
+    width: 230px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 17px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #f0eeee;
+} */
+.user-id{
+    width: 200px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #f0eeee;
+}
+.id_check{
+    width: 100px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    background-color: #549B90;
+}
+.id_check:hover , .pw_check:hover{
+    cursor: pointer;
+    background-color: #366962;
+}
+
+/* .sign form .email #email-dropdown{
+    width: 100px;
+    height: 40px;
+    margin: 20px 0;
+    font-size: 17px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #f0eeee;
+    cursor: pointer;
+} */
+.sign .submit #sign-submit{
+    width: 200px;
+    height: 45px;
+    margin: 25px 0 0 0;
+    font-weight: bold;
+    font-size: large;
+    background-color: #549B90;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+}
+.sign .submit #sign-submit:hover{
+    background-color: #366962;
+}

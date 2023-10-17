@@ -1,0 +1,40 @@
+
+table{
+    width: 60%;
+    margin: 15px auto;
+    border-collapse: collapse;
+    margin-left: 23%;
+}
+table .head{
+    border: 1px ;
+    font-size: 17px;
+    background-color: #78c3b8;
+}
+table .head th{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+    
+}
+table tr td{
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+
+}
+.table_title a{
+    text-decoration: none; 
+    color: rgb(57, 56, 56);
+}
+.table_title a:hover{
+    cursor: pointer;
+    color: #63b1a5;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.table_ing a{
+    text-decoration: none;
+    color: #444444;
+}
+.table_ing a:hover{
+    color: #78c3b8;
+    font-weight: bold;
+}

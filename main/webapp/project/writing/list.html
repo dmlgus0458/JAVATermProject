@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./list.css">
+  <link rel="stylesheet" href="../navbar/navibar.css">
+  <style>
+    table,
+    tr,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+  </style>
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+/>
+</head>
+
+<body>
+  <% String sql="select * from board" ; int rowCount=0; try { pstmt=conn.prepareStatement(sql); ResultSet
+    rs=pstmt.executeQuery(); %>
+    <nav id="navigation_bar">
+        <div>
+          <button><a href="../writing/write.jsp">글 쓰기</a></button>
+          <button><a href="../writing/list.jsp">글 목록 보러가기</a></button>
+          <button>내 글 보러가기</button>
+        </div>
+      </nav>
+      <div id="logo"><a href="../main/main_user.jsp"><img src="./img/logo.png" alt=""></a></div>
+    <!-- 검색창 -->
+    <form action="search.jsp" method="post" class="search_form">
+        <input type="text" name="word" placeholder="  검색어를 입력하세요" class="search_form_text">
+        <input type="image" src="./search.png" name="Submit" value="Submit" class="search-btn">
+    </form>
+    <table border=1 cellpadding=1 id="table">
+      <tr>
+        <th width=50>번호</th>
+        <th width=80>제목</th>
+        <th width=80>글쓴이</th>
+        <th width=80>nick</th>
+        <th width=80>recruit</th>
+        <th width=80>price</th>
+        <th width=80>place</th>
+        <th width=80>sdate</th>
+        <th width=80>Content</th>
+      </tr>
+      <% while (rs.next()) { %>
+        <tr>
+          <td align=center>
+            <%= rs.getString("Bno") %>
+          </td>
+          <td align=center><a href="Content.jsp?Bno=<%= rs.getString(" Bno") %>"><%= rs.getString("Title") %></a></td>
+          <td align=center>
+            <%= rs.getString("id") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("nick") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("recruit") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("price") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("place") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("sdate") %>
+          </td>
+          <td align=center>
+            <%= rs.getString("Content") %>
+          </td>
+        </tr>
+        <% rowCount++; } rs.close(); } catch(Exception e) { out.println("list 조회에 문제가 있습니다. <hr>");
+          out.println(e.toString());
+          e.printStackTrace();
+          }
+          finally {
+          if(pstmt != null) pstmt.close();
+          if(conn != null) conn.close();
+          }
+          %>
+    </table>
+    </center>
+
+    <p>
+      <hr>
+      <font color=blue>
+        <% if (rowCount==0) out.println("조회된 결과가 없습니다."); else out.println("조회된 결과가 " + rowCount + " 건 입니다."); %>
+      </font>
+      <br>
+</body>
+
+</html>

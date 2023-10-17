@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+}
+#navigation_bar {
+    background-color: #63b1a5;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+}
+
+#navigation_bar div {
+    margin: auto;
+    width: 440px;
+}
+
+#navigation_bar button {
+    border: 0;
+    background-color: #63b1a5;
+    text-align: center;
+    margin: 0 20px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#navigation_bar button a {
+    text-decoration: none;
+    color: rgb(52, 51, 51);
+}
+
+#navigation_bar button a:hover {
+    cursor: pointer;
+    color: rgb(68, 65, 65);
+}
+#logo{
+    margin: 0 auto;
+    width: 280px;
+}
+#logo img{
+    width: 250px;
+    margin: 70px 20px 50px 20px;
+}
+.main{
+    margin: 0 auto;
+    width: 700px;
+    padding: 50px 70px;
+    border: 2px solid #dfdfdf;
+
+}
+
+.top{
+    margin-bottom: 50px;
+}
+.no{
+    font-size: 15px;
+}
+.title{
+    text-align: center;
+    margin: 10px 0;
+}
+.title span{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.num_nick{
+    margin: 15px;
+
+}
+.num_nick .nick{
+    font-size: 20px;
+    font-weight: 800;
+}
+.num_nick img{
+    width: 35px;
+}
+/* 
+.top div:nth-child(3) span{
+    font-size: smaller;
+} */
+.edt{
+    margin: 15px 0;
+}
+.content{
+    width: 80%;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.cate span{
+    color: #57a095;
+    font-size: 17px;
+    font-weight: 700;
+}
+.edit{
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.bottom{
+    margin: 50px 0 100px 0;
+}
+
+.circle{
+    background-color: #63b1a5;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px 12px;
+    margin-left: 15px;
+}
+
+.comments{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    margin: 15px 0px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    overflow: scroll;
+}
+
+.comments:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.comments_first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comments_main{
+    margin-left: 20px;
+}
+
+.comments_main div:nth-child(1) span:nth-child(1){
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.comments_main div:nth-child(1) span:nth-child(2){
+    font-size: smaller;
+    font-size: 9px;
+    margin-left: 7px;
+}   
+
+.comments_main div:nth-child(2){
+    font-size: 14px;
+    margin-top: 8px;
+}
+#rate{
+    margin: 10px auto;
+    width: 840px;
+}
+.rate_input{
+    width: 100%;
+    height: 50px;
+    /* margin-top: 10px; */
+    background-color: #63b1a5;
+    border: 0px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+
+}
+.rate_input:hover{
+    cursor: pointer;
+    color: aliceblue;
+    background-color: #15b39b;
+}
+.delete form input{
+    display: block;
+}
+
+.delete form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete_btn{
+    margin: 7px 10px;
+    background-color: white;
+    padding: 5px 5px;
+    border: none;
+    font-size: 12px;
+}
+
+.delete_btn:hover{
+    font-size: 14px;
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    background-color: #15b39b;
+}
+
+.writeComment{
+    margin: 70px auto;
+    width: 850px;
+    height: 50px;
+}
+
+.writeComment form textarea{
+    width: 85%;
+    padding: 7px 7px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#comment{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comment_register{
+    margin: 0px;
+    background-color: #63b1a5;
+    border: 0px solid;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    width: 100px;
+    height: 110px;
+}
+
+.comment_register:hover{
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+    background-color: #15b39b;
+}
+.rating{
+    margin: 0 auto;
+}
+.rating div{
+    width: 700px;
+}
+#Enter{
+    margin: 10px auto;
+    width: 800px;
+    height: 50px;
+}
+#Enter .enterBtn{
+    width: 350px;
+    height: 50px;
+    margin-top: 60px;
+    background-color: #63b1a5;
+    border: 0px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+}
+#Enter .enterBtn:hover{
+    cursor: pointer;
+    background-color: #15b39b;
+}
+#unlike, #like{
+    margin: 10px auto;
+    width: 840px;
+}
+.likeBtn{
+    width: 350px;
+    height: 50px;
+    /* margin-top: 10px; */
+    background-color: #63b1a5;
+    border: 0px solid;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    float: right;
+
+}
+.likeBtn:hover{
+    cursor: pointer;
+    background-color: #15b39b;
+}
+#writer_right{
+    margin: 10px auto;
+    width: 840px;
+    height: 50px;
+
+}
+#writer_right a{
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    background-color: #63b1a5;
+    border: 0px solid;
+    text-align: center;
+    line-height: 50px;
+}
+.delete{
+    width: 350px;
+    height: 50px;
+    float: left;
+}
+.writeedit{
+    width: 350px;
+    height: 50px;
+    float: right;
+}
+#comment_table_div{
+    margin: 15px auto;
+    width: 830px;
+    border: 2px solid #15b39b;
+    border-radius: 10px;
+    padding: 10px;
+}
+.comment_table{
+    width: 800px;
+}
+.comment_table_content{
+    width: 250px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+/*
+.comment_table th, .comment_table  td{
+    border: 1px solid #63b1a5;
+}*/
+#comment_delete .delete{
+    width: 100%;
+    height: 45px;
+    padding: 0 20px;
+    float: right;
+    background-color: #57a095;
+    color: #363636;
+    border-radius: 7px;
+    border: 0px solid;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#comment_delete .delete:hover{
+    cursor: pointer;
+    background-color: #15b39b;
+}
